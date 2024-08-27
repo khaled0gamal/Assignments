@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>assignment_2</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+<<<<<<< HEAD
+    <Folder Include="realEstate\img\" />
+=======
+    <Folder Include="NewFolder\" />
+>>>>>>> 64a4475659bdb4dd41c07792567c1a88643a782f
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,88 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    user-select:none;
+}
+
+:root {
+    --background: rgb(12, 12, 12);
+    --titel: rgb(95, 166, 142);
+    --p: rgb(229, 229, 229);
+}
+
+.back-black {
+    height: 100vh;
+    background-color: rgb(14, 14, 14);
+    align-items: center;
+    display: flex;
+}
+
+.all {
+    height: 85%;
+    padding: 24px 10px;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-sec {
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+
+.all img {
+    height: calc(100% + 10px);
+}
+
+.right-sec {
+    width: 52%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+h4, h2, button {
+    color: var(--titel);
+}
+
+h1, p {
+    color: var(--p);
+}
+
+h1, h2 {
+    font-size: 54px;
+    font-weight: 100;
+}
+
+.right-sec h4 {
+    font-weight: 400;
+    font-size:19.5px;
+}
+
+.right-sec p {
+    font-weight: 100;
+    font-size: small;
+    line-height:1.6;
+}
+
+.right-sec div {
+    margin-bottom: 15px
+}
+
+.right-sec button {
+    all: unset;
+    border: 2px solid var(--titel);
+    color: var(--titel);
+    margin-top: 18px;
+    padding: 6px 25px;
+    font-size: 12px;
+}
+
+
