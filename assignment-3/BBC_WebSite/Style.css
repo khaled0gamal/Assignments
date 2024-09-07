@@ -7,7 +7,6 @@
     height: 40px;
     width: 94%;
     margin: 0 auto;
-    /* background-color:beige;*/
 }
 
 .topbar-section {
@@ -85,13 +84,13 @@ header {
     justify-content: space-between;
 }
 
-    #menu-bar h1 {
-        margin: 0;
-        color: white;
-        font-size: 35px;
-        font-weight: normal;
-        margin-left: 27px;
-    }
+#menu-bar h1 {
+    margin: 0;
+    color: white;
+    font-size: 35px;
+    font-weight: normal;
+    margin-left: 27px;
+}
 
 #local-news {
     border: 1px #bb4545 solid;
@@ -100,13 +99,13 @@ header {
     margin-right:12px;
 }
 
-    #local-news a {
-        color: white;
-        text-decoration: none;
-        font-size: 30px;
-        position: relative;
-        top: -8px;
-    }
+#local-news a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    top: -8px;
+}
 
 #local-news a:hover {
     text-decoration: underline;
