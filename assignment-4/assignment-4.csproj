@@ -4,11 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>assignment_2</RootNamespace>
+    <RootNamespace>assignment_4</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="realEstate\img\" />
-  </ItemGroup>
 
 </Project>
