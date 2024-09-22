@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>functions</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section {
+            margin-top: 50px;
+        }
+
+        section div {
+            margin-top: 20px;
+        }
+        p{
+            margin:0;
+            padding:5px
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="call the 'showMessage()' function"
+           onclick="showMessage();" />
+    <section>
+        <form>
+            <div>
+                <label for="userName">User name :</label>
+                <input type="text" id="userName" /><br />
+                <label id="cName" for="urColor">Ur Color is : White</label> 
+                <input id="urColor" value="#ffffff" type="color" />
+                <input onclick="colorName();" value="ADD Color " />
+            </div>
+
+            <div>
+                <label for="message"> Message  :</label>
+                <textarea id="message" cols="50" rows="7"></textarea>
+            </div>
+            <div>
+                <input type="button" value="Send"
+                       onclick="addChatMessage();" />
+            </div>
+        </form>
+        <div id="chatBody"></div>
+    </section>
+    <script>
+        function showMessage() {
+            alert('Hello everyone!');
+        }
+        function colorName() {
+            let urColor = document.getElementById("urColor").value;
+            let result = ntc.name(urColor);
+            document.getElementById("cName").innerHTML = `
+                Ur Color is : ${result[1]}
+            `
+        }
+        function addChatMessage() {
+            let from = document.getElementById("userName").value;
+            let text = document.getElementById("message").value;
+            let urColor = document.getElementById("urColor").value;
+            document.getElementById("chatBody").innerHTML +=
+                `
+                   <p style="background-color:${urColor}">* ${from} * : ${text}</p>
+                `;
+        }
+    </script>
+    <script src="https://www.color-blindness.com/color-name-hue-tool/js/ntc.js"></script>
+</body>
+</html>
