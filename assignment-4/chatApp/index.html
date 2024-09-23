@@ -12,58 +12,72 @@
             margin-top: 50px;
         }
 
-        section div {
-            margin-top: 20px;
+            section div {
+                margin-top: 20px;
+            }
+
+        p {
+            margin: 0;
+            padding: 5px;
+            /* border: .5px solid gray; */
         }
-        p{
-            margin:0;
-            padding:5px
+
+        .White {
+            color: White;
         }
     </style>
 </head>
+
 <body>
-    <input type="button" value="call the 'showMessage()' function"
+    <input type="button"
+           value="call the 'showMessage()' function"
            onclick="showMessage();" />
     <section>
         <form>
             <div>
                 <label for="userName">User name :</label>
-                <input type="text" id="userName" /><br />
-                <label id="cName" for="urColor">Ur Color is : White</label> 
-                <input id="urColor" value="#ffffff" type="color" />
-                <input onclick="colorName();" value="ADD Color " />
+                <input type="text" id="userName" /><!--<br />-->
+                <label id="cName" for="urColor">Ur Color is : White</label>
+                <input onchange="colorName();"
+                       id="urColor"
+                       value="#ffffff"
+                       type="color" />
             </div>
-
             <div>
-                <label for="message"> Message  :</label>
+                <label for="message"> Message :</label>
                 <textarea id="message" cols="50" rows="7"></textarea>
             </div>
             <div>
-                <input type="button" value="Send"
-                       onclick="addChatMessage();" />
+                <input type="button" value="Send" onclick="addChatMessage();" />
             </div>
         </form>
         <div id="chatBody"></div>
     </section>
     <script>
         function showMessage() {
-            alert('Hello everyone!');
+            alert("Hello everyone!");
         }
         function colorName() {
             let urColor = document.getElementById("urColor").value;
             let result = ntc.name(urColor);
             document.getElementById("cName").innerHTML = `
-                Ur Color is : ${result[1]}
-            `
+                            Ur Color is : ${result[1]}
+                        `;
         }
         function addChatMessage() {
             let from = document.getElementById("userName").value;
             let text = document.getElementById("message").value;
             let urColor = document.getElementById("urColor").value;
-            document.getElementById("chatBody").innerHTML +=
-                `
-                   <p style="background-color:${urColor}">* ${from} * : ${text}</p>
-                `;
+            let chatBody = document.getElementById("chatBody");
+            if (urColor === "#000000") {
+                chatBody.innerHTML += `
+              <p class="White" style="background-color:${urColor} ;">* ${from} * : ${text}</p>
+            `;
+            } else {
+                chatBody.innerHTML += `
+              <p style="background-color:${urColor} ;">* ${from} * : ${text}</p>
+            `;
+            }
         }
     </script>
     <script src="https://www.color-blindness.com/color-name-hue-tool/js/ntc.js"></script>
