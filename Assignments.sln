@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assignment-2", "assignment-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assignment-3", "assignment-3\assignment-3.csproj", "{C8D68822-ED75-4287-8989-EDDFBC818456}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "assignment-4", "assignment-4\assignment-4.csproj", "{0B26187D-6938-4378-B666-D4958685867C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assignment-4", "assignment-4\assignment-4.csproj", "{0B26187D-6938-4378-B666-D4958685867C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "assignment-for-javaScript-lecture-3", "assignment-for-javaScript-lecture-3\assignment-for-javaScript-lecture-3.csproj", "{9C59D9C7-B1FE-46DF-BD0F-D5DAB1AEBEBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0B26187D-6938-4378-B666-D4958685867C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B26187D-6938-4378-B666-D4958685867C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B26187D-6938-4378-B666-D4958685867C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C59D9C7-B1FE-46DF-BD0F-D5DAB1AEBEBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C59D9C7-B1FE-46DF-BD0F-D5DAB1AEBEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C59D9C7-B1FE-46DF-BD0F-D5DAB1AEBEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C59D9C7-B1FE-46DF-BD0F-D5DAB1AEBEBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
