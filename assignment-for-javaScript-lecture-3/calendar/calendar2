@@ -24,38 +24,69 @@
 <body>
     <div id="calendar"></div>
 
-    <script>
+        <script>
         function createCalendar(elem, year, month) {
-            const table = document.createElement('table');
-
-            const daysOfWeek = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU'];
-
-            const headerRow = `<tr>${daysOfWeek.map(day => `<th>${day}</th>`).join('')}</tr>`;
-            table.innerHTML = headerRow;
-
-            let day = 1;
-            let calendarHTML = "<tr>";
-
-            for (let i = 1; i < 6; i++) {
-                calendarHTML += "<td></td>";
-            }
-
-
-            while (day <= 30) {
-                calendarHTML += `<td>${day}</td>`;
-
-                if ((6 + day - 1) % 7 === 0) {
-                    calendarHTML += "</tr><tr>";
-                }
-                day++;
-            }
-
-            table.innerHTML += calendarHTML;
+            let table = document.createElement("table");
+            let daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
             elem.appendChild(table);
+            table.innerHTML = `<tr>${daysOfWeek
+                .map((day) => `<th>${day}</th>`)
+                .join("")}</tr>`;
+
+            let table2 = `
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+ 
+            `
+            table.innerHTML += table2
         }
 
-        const cal = document.getElementById('calendar');
+        const cal = document.getElementById("calendar");
         createCalendar(cal, 2012, 9);
+
     </script>
 </body>
 </html>
