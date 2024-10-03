@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #404040;
+            background-color: #ddd;
+        }
+
+        th {
+            background-color: #9e9e9e;
+        }
+    </style>
+    <title>Calendar</title>
+</head>
+<body>
+    <div id="calendar"></div>
+
+    <script>
+        function createCalendar(elem, year, month) {
+            const table = document.createElement('table');
+
+            const daysOfWeek = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU'];
+
+            const headerRow = `<tr>${daysOfWeek.map(day => `<th>${day}</th>`).join('')}</tr>`;
+            table.innerHTML = headerRow;
+
+            let day = 1;
+            let calendarHTML = "<tr>";
+
+            for (let i = 1; i < 6; i++) {
+                calendarHTML += "<td></td>";
+            }
+
+
+            while (day <= 30) {
+                calendarHTML += `<td>${day}</td>`;
+
+                if ((6 + day - 1) % 7 === 0) {
+                    calendarHTML += "</tr><tr>";
+                }
+                day++;
+            }
+
+            table.innerHTML += calendarHTML;
+            elem.appendChild(table);
+        }
+
+        const cal = document.getElementById('calendar');
+        createCalendar(cal, 2012, 9);
+    </script>
+</body>
+</html>
