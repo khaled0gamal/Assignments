@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assignment-for-javaScript-l
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jqueryTEST", "WebApplication1\jqueryTEST.csproj", "{13B3C88F-4B5D-4B5D-9FEF-69D3A9C5222A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootstrapTEST", "BootstrapTEST\BootstrapTEST.csproj", "{99020C84-5AE3-48C7-9437-BC140F2FA6EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapTEST", "BootstrapTEST\BootstrapTEST.csproj", "{99020C84-5AE3-48C7-9437-BC140F2FA6EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
