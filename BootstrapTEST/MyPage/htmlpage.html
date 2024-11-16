@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../wwwroot/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <title>bootstrap</title>
+</head>
+<body>
+    <div class="container-fluid bg-primary text-white pb-4 text-center">
+        A showcase cf Batstrap compnents and utilities
+    </div>
+    <!-- start container -->
+    <div class="container">
+        <div>
+            <h4 class="mt-1 text-body-tertiary">Responsive Grid Layout</h4>
+            <div class="row gap-1">
+                <div class="col-sm bg-light p-2">
+                    Content Block 1
+                </div>
+                <div class="col-sm bg-secondary p-2 text-white">
+                    Content Block 2
+                </div>
+                <div class="col-sm bg-info p-2 text-white">
+                    Content Block 3
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="text-body-tertiary">
+                Typography
+            </h1>
+            <h5 class="text-dark-emphasis">
+                This page demonstrates Bootstrap's typography features.
+            </h5>
+            <p class="text-body-tertiary mt-3 text-end">
+                This is a muted paragraph aligned to the right.
+            </p>
+        </div>
+        <div class="text-center">
+            <img src="../MyPage/img/pexels.jpg" class="img-fluid rounded shadow-lg mb-5" alt="...">
+        </div>
+        <div>
+            <h2 class="text-body-tertiary">Table</h2>
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>34</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2 class="text-body-tertiary">Form</h2>
+            <input class="form-control" type="text" placeholder="Name">
+            <h6 class="mt-2">Gender</h6>
+            <select class="form-select">
+                <option value="1">Male</option>
+                <option value="1">Female</option>
+            </select>
+            <div class="d-flex flex-column my-3 gap-1">
+                <label class="form-check-label pointer-event" for="default">
+                    <input class="form-check-input" type="checkbox" id="default">
+                    Subscribe to newsletter
+                </label>
+                <label class="form-check-label" for="radio1">
+                    <input class="form-check-input" type="radio" name="radio1">
+                    Option1
+                </label>
+                <label class="form-check-label" for="radio2">
+                    <input class="form-check-input" type="radio" name="radio2">
+                    Option2
+                </label>
+            </div>
+            <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+        <div>
+            <h3 class="text-body-tertiary mt-3">
+                Styled Box
+            </h3>
+            <div class="alert bg-success text-white border border-warning shadow" role="alert">
+                Theis a box with a background, border. and shadw.
+            </div>
+        </div>
+        <div>
+            <h2 class="text-body-tertiary mt-3">
+                Spacing and Sizing
+            </h2>
+            <div class="w-25 bg-dark-subtle m-3 p-5">
+                Box padding and
+                margin
+            </div>
+        </div>
+    </div>
+    <!-- end container -->
+
+
+
+
+    <script src="../wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
